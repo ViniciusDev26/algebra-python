@@ -1,5 +1,7 @@
+import numpy as np
+
 def multiplyMatrix(matrixA, matrixB):
-  # TODO: create function to multiply matrix
-  for index, row in matrixA:
-    result = []
-    
+  return np.matmul(matrixA, matrixB)
+
+def convertRadiusToGraus(angleInRadius):
+  return angleInRadius * (np.pi / 180)
